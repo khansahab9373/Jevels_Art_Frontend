@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../images/wp12799602-jewelry-4k-wallpapers.jpg") no-repeat
+    center center/cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+ 
+}
+
+.signup {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -40px;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.signup_card {
+  border: 1px solid grey;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 44%;
+  box-shadow: -1px 0px 20px 10px;
+  backdrop-filter: blur(16px);
+  background-image: url(https://images.pexels.com/photos/28900485/pexels-photo-28900485/free-photo-of-elegant-female-hands-with-rings-against-neutral-background.jpeg?auto=compress&cs=tinysrgb&w=600);
+
+  /* background-color: black; */
+}
+
+h1 {
+  text-align: center;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-size: 70px;
+  margin-left: 20%;
+  margin-top: 50px;
+  color: #000000;
+  padding-bottom: 0px;
+}
+
+legend {
+  color: #495057;
+}
+
+label {
+  color: #0665f1;
+  font-size: 20px;
+  font-family: "Domine", serif;
+}
+
+input,
+.box {
+  font-family: "Domine", serif;
+  border: none;
+  padding: 8px;
+  margin: 0px;
+  width: 58%;
+  border-bottom: 1px solid white;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+#submit {
+  padding: 10px 20px;
+  margin: -5px;
+  background-color: rgba(64, 161, 226, 0.5);
+  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  width: 40%;
+  margin-left: 160px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+#submit:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#successPopup div {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#successPopup h3 {
+  color: #4caf50;
+}
+
+#successPopup a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#successPopup a:hover {
+  color: #2a3d66;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 414px;
+    height: 929px;
+  }
+  .signup_card {
+    height: auto;
+    width: 327px;
+  }
+  .box {
+    width: 80%;
+  }
+  h1 {
+    font-size: 60px;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  body {
+    height: 1200px;
+    width: 900px;
+  }
+  .signup {
+    margin-right: 100px;
+  }
+  .signup_card {
+    margin-right: 10px;
+    margin-top: 60px;
+    margin-bottom: 900px;
+    padding-top: 0px;
+    margin-left: 0px;
+    width: 76vw;
+  }
+  h1 {
+    padding-bottom: 0px;
+    margin-left: 150px;
+    margin-top: 200px;
+  }
+  .container {
+    margin-left: 90px;
+  }
+}

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("https://wallpaperaccess.com/full/2463202.jpg") no-repeat
+    center center/cover;
+}
+a {
+  text-decoration: none;
+  color : lightblue;
+  
+}
+
+
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+.login-form {
+  display: flex;
+  justify-content: flex-start;
+}
+.login_card {
+  border: 1px solid grey;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+h1 {
+  text-align: center;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  margin-left: 215px;
+  margin-top: 50px;
+
+  /* border-bottom: 4px solid rgba(255,255,255,0.5); */
+  color: azure;
+  padding-bottom: 55px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400;
+  /* border: 1px solid rgb(18, 17, 17); */
+  margin: auto;
+
+  background-color: rgba(207, 104, 104, 0.5);
+  /* box-shadow: inset -5px -5px rgba(233, 8, 8, 0.816); */
+  border-radius: 25px;
+}
+label {
+  color:#2982da;
+  font-size: 20px;
+  font-family: "Domine", serif;
+}
+input {
+  font-family: "Domine", serif;
+  border: none;
+}
+.box {
+  padding: 12px;
+  margin: 10px;
+  width: 60%;
+
+  border-bottom: 1px solid white;
+  outline: none;
+  /* border-radius: 20px; */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* box-shadow: inset -3px -3px rgba(0,0,0,0.5); */
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+#submit {
+  padding: 10px 20px;
+  margin: 14px;
+  background-color: rgba(64, 161, 226, 0.5);
+  box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  width: 40%;
+
+  margin-left: 100px;
+}
+#submit:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+@media screen and (max-width:500px)
+{
+body{
+  width: 414px;
+  height: 929px;
+}
+.login_card {
+  height: 390px;
+  width: 327px;
+}
+.box
+{
+  width: 80%;
+}
+h1
+{font-size: 60px;
+  margin-left: 60px;
+}}
+@media screen and (min-width:501px) and (max-width:900px)
+{
+  body{
+    height:1200px;
+    width:900px;
+  }
+  .login{
+    margin-right: 100px;
+  }
+  .login_card {
+    margin-right: 10px;
+    margin-top: 60px;
+    margin-bottom: 900px;
+    padding-top: 0px;
+    margin-left: 0px;
+}
+h1{
+  padding-bottom: 0px;
+  margin-left:150px;
+  margin-top:200px;
+}
+.container{
+  margin-left: 90px;
+}
+
+}
+@media only screen and (min-width: 768px)
+ {
+
+  
+ }

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Payment Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/assets/style/pay.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="paymentForm">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Shipping Address</h3>
+            <div class="inputBox">
+              <label for="firstName">First Name:</label>
+              <input
+                type="text"
+                id="firstName"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="username">Username:</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Enter username (optional)"
+              />
+            </div>
+            <div class="inputBox">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter email address"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="address">Address:</label>
+              <input
+                type="text"
+                id="address"
+                placeholder="Enter address"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="address2">Address 2:</label>
+              <input
+                type="text"
+                id="address2"
+                placeholder="Enter address line 2 (optional)"
+              />
+            </div>
+            <div class="inputBox">
+              <label for="country">Country:</label>
+              <input
+                type="text"
+                id="country"
+                placeholder="Enter country"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="city">City:</label>
+              <input type="text" id="city" placeholder="Enter city" required />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <label for="postcode">Zip Code:</label>
+                <input
+                  type="text"
+                  id="postcode"
+                  placeholder="123456"
+                  required
+                />
+              </div>
+              <div class="inputBox">
+                <label for="shippingAddress">Shipping Address:</label>
+                <select id="shippingAddress">
+                  <option value="true" selected>Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+              <div class="inputBox">
+                <label for="saveInfo">Save Info:</label>
+                <select id="saveInfo">
+                  <option value="true">Yes</option>
+                  <option value="false" selected>No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">Card Details</h3>
+            <div class="inputBox">
+              <label for="cardName">Name on Card:</label>
+              <input
+                type="text"
+                id="cardName"
+                placeholder="Enter name on card"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="paymentMethod">Payment Method:</label>
+              <select id="paymentMethod" required>
+                <option value="">Select payment method</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="PayPal">PayPal</option>
+              </select>
+            </div>
+            <div class="inputBox">
+              <label for="cardNumber">Card Number:</label>
+              <input
+                type="text"
+                id="cardNumber"
+                placeholder="1111-2222-3333-4444"
+                maxlength="19"
+                required
+              />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <label for="expireDate">Expiration Date:</label>
+                <input type="month" id="expireDate" required />
+              </div>
+              <div class="inputBox">
+                <label for="securityNumber">CVV:</label>
+                <input
+                  type="text"
+                  id="securityNumber"
+                  placeholder="123"
+                  required
+                />
+              </div>
+            </div>
+            <!-- <div class="inputBox">
+              <label for="phoneNumber">Phone Number:</label>
+              <input
+                type="text"
+                id="phoneNumber"
+                placeholder="Enter your phone number"
+                maxlength="10"
+                required
+              />
+              <button type="button" id="sendOtp" style="margin-top: 10px">
+                Send OTP
+              </button>
+            </div>
+            <div class="inputBox">
+              <label for="otp">Enter OTP:</label>
+              <input
+                type="text"
+                id="otp"
+                placeholder="Enter the OTP"
+                maxlength="6"
+                required
+              />
+              <button type="button" id="verifyOtp" style="margin-top: 10px">
+                Verify OTP
+              </button>
+            </div> -->
+            <!-- Custom CAPTCHA -->
+            <div class="inputBox">
+              <label for="captcha">Enter the text shown below:</label>
+              <div
+                id="captcha-container"
+                style="display: flex; align-items: center"
+              >
+                <canvas
+                  id="captchaCanvas"
+                  width="200"
+                  height="50"
+                  style="border: 1px solid #ccc"
+                ></canvas>
+                <button
+                  type="button"
+                  id="refreshCaptcha"
+                  style="margin-left: 10px"
+                >
+                  🔄
+                </button>
+              </div>
+              <input
+                type="text"
+                id="captchaInput"
+                placeholder="Enter CAPTCHA"
+                required
+              />
+            </div>
+            <div class="inputBox">
+              <label for="name"> Card Accepted: </label>
+              <img
+                src="/assets/images/paypal1.jpeg"
+                alt="credit/debit card image"
+              />
+              <img
+                src="/assets/images/visa.jpeg"
+                alt="credit/debit card image"
+              />
+              <img
+                src="/assets/images/mastercard.jpeg"
+                alt="credit/debit card image"
+              />
+              <img
+                src="/assets/images/samsung.jpeg"
+                alt="credit/debit card image"
+              />
+            </div>
+          </div>
+        </div>
+
+        <input type="submit" value="Proceed to Checkout" class="submit_btn" />
+      </form>
+    </div>
+
+    <script>
+      // Generate Random CAPTCHA
+      function generateCaptcha() {
+        const captchaText = Math.random()
+          .toString(36)
+          .substring(2, 8)
+          .toUpperCase();
+        const canvas = document.getElementById("captchaCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Clear previous CAPTCHA
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Set CAPTCHA styles
+        ctx.font = "30px Arial";
+        ctx.fillStyle = "#FFFFFF"; // White color for CAPTCHA text
+        ctx.fillText(captchaText, 40, 35);
+
+        return captchaText;
+      }
+
+      // Store CAPTCHA text for verification
+      let currentCaptcha = generateCaptcha();
+
+      // Refresh CAPTCHA on button click
+      document
+        .getElementById("refreshCaptcha")
+        .addEventListener("click", () => {
+          currentCaptcha = generateCaptcha();
+        });
+
+      // Validate CAPTCHA on form submit
+      document
+        .getElementById("paymentForm")
+        .addEventListener("submit", function (event) {
+          const captchaInput = document
+            .getElementById("captchaInput")
+            .value.trim();
+
+          // Check if CAPTCHA matches
+          if (captchaInput !== currentCaptcha) {
+            event.preventDefault();
+            Swal.fire(
+              "Error!",
+              "CAPTCHA is incorrect. Please try again.",
+              "error"
+            );
+          } else {
+            Swal.fire("Success!", "CAPTCHA is correct!", "success");
+            // Proceed with form submission
+          }
+        });
+    </script>
+    <script>
+      document
+        .getElementById("paymentForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const formData = {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            username: document.getElementById("username").value,
+            email: document.getElementById("email").value,
+            address: document.getElementById("address").value,
+            address2: document.getElementById("address2").value,
+            country: document.getElementById("country").value,
+            city: document.getElementById("city").value,
+            postcode: document.getElementById("postcode").value,
+            shippingAddress:
+              document.getElementById("shippingAddress").value === "true",
+            saveInfo: document.getElementById("saveInfo").value === "true",
+            cardName: document.getElementById("cardName").value,
+            paymentMethod: document.getElementById("paymentMethod").value,
+            cardNumber: document.getElementById("cardNumber").value,
+            expireDate: document.getElementById("expireDate").value,
+            securityNumber: document.getElementById("securityNumber").value,
+          };
+
+          fetch("https://jewels-art-backend.vercel.app/order", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Error submitting the form");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              Swal.fire(
+                "Success!",
+                "Your payment has been processed.",
+                "success"
+              );
+              setTimeout(() => {
+                window.location.href = "/index.html";
+              }, 2000);
+            })
+            .catch((error) => {
+              Swal.fire(
+                "Error!",
+                "Something went wrong. Please try again.",
+                "error"
+              );
+            });
+        });
+    </script>
+  </body>
+</html>

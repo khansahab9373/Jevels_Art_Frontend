@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewels Art</title>
+    <link rel="icon" type="image/png" href="/assets/images/LL.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/style/product_details.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+       <a class="navbar-brand" href="/index.html">
+        <img
+          src="/assets/images/Gold_Luxury_Initial_Logo-removebg-preview.png"
+          alt="Logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+ <a class="nav-link" href="/index.html"><i class="fas fa-home"></i> Home</a>          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../collection.html"
+              ><i class="fas fa-th"></i> Collection</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../store.html"><i class="fas fa-store"></i> Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html"
+              ><i class="fas fa-address-book"></i> Contact Us</a
+            >
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../wish.html"
+              ><i class="fas fa-heart"></i> Wishlist</a
+            >
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="../cart.html"
+              ><i class="fas fa-shopping-cart"></i> Cart</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html"><i class="fas fa-user"></i> Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user-circle"></i> Profile
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#"
+                ><i class="fas fa-box"></i> Orders</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"
+                ><i class="fas fa-sign-out-alt"></i> Logout</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div class="product_card" style="max-width: 800px; height: 800px;"> -->
+    <div class="product container">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide slider_main"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1f64c5d8/images/hi-res/510895DYAAGA00_1.jpg?sw=640&sh=640" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw27443c27/images/hi-res/510895DYAAGA00_2.jpg?sw=640&sh=640" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwa6cd6a1d/images/hi-res/510895DYAAGA00_3.jpg?sw=640&sh=640" class="d-block" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title">Traditional Fancy Graceful Gold Drop Earrings</h3>
+        <a href="#" id="heart"onclick="alert('Product Successfully Added To Wishlist')">&#10084;</a>
+        <hr />
+        <p class="card-text">
+            Embrace the ethereal beauty of fresh flowers with these Floral Drop Earrings Crafted in 22 Karat Glossy Yellow Gold.
+          <br />
+        </p>
+
+        <p>
+           Price: <i class="fa-solid fa-indian-rupee-sign"></i>
+            <span id="updatedPrice1"> 34,437</span>
+            <span id="updatedPrice2"><del><i class="fa-solid fa-indian-rupee-sign"></i>38,500</del
+            ></span
+          >
+        </p>
+        <p class="card-text">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </p>
+        <!-- <label for="ring-size"> SIZE:</label>
+                      <select id="ring-size" name="ring-size" placeholder="Size :">
+                        
+                          <option value="4">4</option>
+                      
+                          <option value="5">5</option>
+                      
+                          <option value="6">6</option>
+                      
+                          <option value="7">7</option>
+                      
+                          <option value="8">8</option>
+                      
+                          <option value="9">9</option>
+                      
+                          <option value="10">10</option>
+                          
+                          <option value="11">11</option>
+                          
+                          <option value="12">12</option>
+                      </select>
+                      <br>
+                      <br> -->
+        <div class="quantity-container">
+          <label for="quantity" class="qty">QUANTITY :</label>
+         <select id="quantity" name="quantity" onchange="updatePrice()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <br />
+          <br />
+        </div>
+
+        <p><i class="fa-regular fa-gem"></i> Purity Gurantee</p>
+        <p>
+          <i class="fa-solid fa-arrows-left-right"></i> Exchange across all
+          stores.
+        </p>
+        <p>
+          <i class="fa-solid fa-box-archive"></i> Free Shipping all across India
+        </p>
+        <a href="#"> <button class="product_cart"onclick=" addToCart({id: 1, name: 'Traditional Fancy Graceful Gold Drop Earrings', price:34437 , image: 'https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw1f64c5d8/images/hi-res/510895DYAAGA00_1.jpg?sw=640&sh=640'})">Add to Cart</button></a>
+ <a href="/pages/paymentgateway.html"> <button class="buy">Buy Now</button></a>      </div>
+    </div>
+    <div class="recom_text">
+      <h1><b>Recommended for you</b></h1>
+      <h5>Discover products tailored to your preferences and interests.</h5>
+    <div class="main_card">
+        <div class="card-content">
+            <img
+              src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw52708018/images/hi-res/501002SIKAAB09_1.jpg?sw=640&sh=640"
+              alt="..."
+            />
+            <p>Pretty Seven Stone Diamond Stud Earrings</p>
+          <h6>Price:<i class="fa-solid fa-indian-rupee-sign"></i>24,437</h6> <span><del><i class="fa-solid fa-indian-rupee-sign"></i>26,500</del></span></h6>
+        <ul class="stars">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+          </ul>
+          <a href="/pages/earrings_products/pssde_earring.html"> <button class="buy">BUY NOW</button></a>
+         
+        </div>
+    
+         <div class="card-content">
+          <img
+            src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw97d34769/images/hi-res/50D4FFHCOAAA02_1.jpg?sw=640&sh=640"
+            alt="..."
+          />
+        
+         
+          <p>Glitterati Band Hoop Earrings</p>
+          <h6>Price:<i class="fa-solid fa-indian-rupee-sign"></i>54,437</h6> <span><del><i class="fa-solid fa-indian-rupee-sign"></i>58,500</del></span></h6>
+        <ul class="stars">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+          </ul>
+          <a href="/pages/earrings_products/Gbhe_earring.html"> <button class="buy">BUY NOW</button></a>
+         
+        </div>
+    
+        <div class="card-content">
+          <img
+            src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw6d65c04d/images/hi-res/50F1D1SFTABA09_1.jpg?sw=640&sh=640"
+            alt="..."
+          />
+        
+         
+          <p>Glamorous Floral Diamond Stud Earring</p>
+          <h6>Price:<i class="fa-solid fa-indian-rupee-sign"></i>94,437</h6> <span><del><i class="fa-solid fa-indian-rupee-sign"></i>96,500</del></span></h6>
+        <ul class="stars">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+          </ul>
+          <a href="/pages/earrings_products/Gfdse_earring.html"> <button class="buy">BUY NOW</button></a>
+         
+        </div>
+    
+        <div class="card-content">
+          <img
+            src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwc3480ccf/images/hi-res/50F1D1SFSAGA09_1.jpg?sw=640&sh=640"
+            alt="..."
+          />
+        
+         
+          <p>Nature Inspired Diamond Stud Earrings</p>
+          <h6>Price:<i class="fa-solid fa-indian-rupee-sign"></i>72456</h6> <span><del><i class="fa-solid fa-indian-rupee-sign"></i>75500</del></span></h6>
+        <ul class="stars">
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+          </ul>
+          <a href="/pages/earrings_products/Nids_earring.html"> <button class="buy">BUY NOW</button></a>
+         
+        </div>
+    
+        </div>  </div>
+
+    <!-- <div class="our_promises">
+                    <img src="/assets/images/India_Promises_Desktop (1).jpg" alt="" />
+                  </div> -->
+    <!-- <div class="recom_text">
+      <h1><b>Recommended for you</b></h1>
+      <h5>Discover products tailored to your preferences and interests.</h5> </div> -->
+      <img
+        src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd9a3b5d2/Line-Design.svg"
+        alt=""
+      />
+   
+    <div class="con_text">
+      <h1><b>Connect With Us</b></h1>
+      <h5>We are always available to guide you at your convenience.</h5>
+      <img
+        src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd9a3b5d2/Line-Design.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="footer">
+      <!-- <a href=""> <button>back to top</button></a> -->
+      <div class="container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="/pages/Our_story.html">Our Story</a></li>
+            <li><a href="/pages/career.html">Careers</a></li>
+            <li><a href="/pages/career.html">Sustainability</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="/pages/contact.html">Contact Us</a></li>
+            <li><a href="/pages/Faq.html">FAQ</a></li>
+            <li><a href="/pages/Returns.html">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="/pages/store.html">Store Locator</a></li>
+            <li><a href="/pages/giftcard.html">Gift Cards</a></li>
+            <li><a href="/pages/offers.html">Offers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Tanishq/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/TanishqJewelry"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/tanishqjewellery/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Jewel Art. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/assets/js/product.js"></script>
+  <script src="../../assets/js/cart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

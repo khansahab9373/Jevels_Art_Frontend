@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewels Art</title>
+    <link rel="icon" type="image/png" href="/assets/images/LL.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/style/rings.css">
+    <style>
+         .container1 {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #555;
+            margin-top: 20px;
+        }
+        .section-content {
+            margin-top: 10px;
+            color: #666;
+        }
+        .job-listing {
+            margin-top: 20px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .job-description {
+            margin-top: 5px;
+            color: #555;
+        }
+        .apply-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .apply-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body style="background-image: url(/assets/images/R.jpeg);">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+     <a class="navbar-brand" href="/index.html">
+      <img
+        src="/assets/images/Gold_Luxury_Initial_Logo-removebg-preview.png"
+        alt="Logo"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./collection.html"
+            ><i class="fas fa-th"></i> Collection</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./store.html"><i class="fas fa-store"></i> Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html"
+            ><i class="fas fa-address-book"></i> Contact Us</a
+          >
+        </li>
+      </ul>
+
+     <div class="search-container">
+        <form   class="form-inline my-2 my-lg-0" onsubmit="handleSearch(event)">
+          <input
+          id="searchInput"
+          type="text" 
+          placeholder="Search for Jewelry..." 
+          required 
+            class="form-control mr-sm-2"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        </div>
+    
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/cart.html"
+            ><i class="fas fa-heart"></i> Wishlist</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./cart.html"
+            ><i class="fas fa-shopping-cart"></i> Cart</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./login.html"><i class="fas fa-user"></i> Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-user-circle"></i> Profile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"
+              ><i class="fas fa-box"></i> Orders</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"
+              ><i class="fas fa-sign-out-alt"></i> Logout</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+      <div class="container1">
+        <h1>Careers at Jewls Art</h1>
+        <div class="section">
+            <div class="section-title">Join Our Team</div>
+            <div class="section-content">
+                At Jewls Art, we are always looking for passionate and talented individuals to join our team. If you have a love for jewelry and a dedication to excellence, we would love to hear from you. Explore our current job openings below and find the perfect opportunity to grow your career with us.
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Current Job Openings</div>
+            <div class="section-content job-listing">
+                <div class="job">
+                    <div class="job-title">Jewelry Designer</div>
+                    <div class="job-description">
+                        We are looking for a creative and experienced Jewelry Designer to join our team. The ideal candidate will have a strong background in design, a keen eye for detail, and a passion for creating beautiful, unique pieces.
+                    </div>
+                    <a href="mailto:careers@jewlsart.com?subject=Application for Jewelry Designer Position" class="apply-button">Apply Now</a>
+                </div>
+                <div class="job">
+                    <div class="job-title">Sales Associate</div>
+                    <div class="job-description">
+                        Our Sales Associates are the face of Jewls Art. We are seeking friendly and motivated individuals to provide exceptional customer service and help our customers find the perfect piece of jewelry.
+                    </div>
+                    <a href="mailto:careers@jewlsart.com?subject=Application for Sales Associate Position" class="apply-button">Apply Now</a>
+                </div>
+                <div class="job">
+                    <div class="job-title">Marketing Specialist</div>
+                    <div class="job-description">
+                        We are looking for a Marketing Specialist to develop and execute marketing strategies that will drive brand awareness and sales. The ideal candidate will have experience in digital marketing, social media, and content creation.
+                    </div>
+                    <a href="mailto:careers@jewlsart.com?subject=Application for Marketing Specialist Position" class="apply-button">Apply Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Why Work with Us?</div>
+            <div class="section-content">
+                At Jewls Art, we believe in fostering a positive and inclusive work environment where creativity and innovation are encouraged. We offer competitive salaries, benefits, and opportunities for professional growth. Join our team and be a part of a company that values your talent and contributions.
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">How to Apply</div>
+            <div class="section-content">
+                If you are interested in any of the positions listed above, please send your resume and a cover letter to <a href="mailto:careers@jewlsart.com">careers@jewlsart.com</a>. Be sure to include the job title in the subject line of your email. We look forward to hearing from you!
+            </div>
+        </div>
+    </div>
+       
+  
+      
+   
+      <div class="recom_text">
+        <h1><b>Recommended for you</b></h1>
+        <h5>Discover products tailored to your preferences and interests.</h5>
+        <img
+          src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd9a3b5d2/Line-Design.svg"
+          alt=""
+        />
+      </div>
+      <div class="con_text">
+        <h1><b>Connect With Us</b></h1>
+        <h5>We are always available to guide you at your convenience.</h5>
+        <img
+          src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwd9a3b5d2/Line-Design.svg"
+          alt=""
+        />
+      </div>
+  
+      <div class="footer">
+        <!-- <a href=""> <button>back to top</button></a> -->
+        <div class="container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="/pages/Our_story.html">Our Story</a></li>
+              <li><a href="/pages/career.html">Careers</a></li>
+              <li><a href="/pages/career.html">Sustainability</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="/pages/contact.html">Contact Us</a></li>
+              <li><a href="/pages/Faq.html">FAQ</a></li>
+              <li><a href="/pages/Returns.html">Returns</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/pages/store.html">Store Locator</a></li>
+              <li><a href="/pages/giftcard.html">Gift Cards</a></li>
+              <li><a href="/pages/offers.html">Offers</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/Tanishq/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://x.com/TanishqJewelry"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/tanishqjewellery/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Jewel Art. All rights reserved.</p>
+        </div>
+      </div>
+  
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

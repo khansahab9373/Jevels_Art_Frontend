@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wishlist</title>
+  <script src="/assets/js/wishlist.js"></script>
+  <link rel="stylesheet" href="/assets/style/wishlist.css" />
+</head>
+<body>
+
+  <!-- Product Section -->
+  <div class="container mt-5">
+    <h2>Our Exclusive Products</h2>
+    <div class="row">
+      <div class="col-md-4 product-card">
+        <div class="card">
+          <!-- <img src="/pages" alt="Product Image" class="card-img-top" /> -->
+          <div class="card-body">
+            <h5 class="card-title">Gold Ring</h5>
+            <p class="card-text">Price: ₹15,000</p>
+            <i class="fas fa-heart heart-icon" onclick="addToWishlist(1, 'Gold Ring', 'https://via.placeholder.com/150', 15000)"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Add more products here -->
+    </div>
+  </div>
+
+  <!-- Wishlist Section -->
+  <div class="container">
+    <h2>Your Wishlist</h2>
+    <div id="wishlistContainer" class="wishlist-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

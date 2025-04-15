@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Price Update</title>
+</head>
+<body>
+    <div class="product">
+        <h2>Product 1</h2>
+        <p>Price: <span id="product-1-price">100</span> USD</p>
+        <label for="quantity-1">Quantity:</label>
+        <select id="quantity-1" onchange="updatePrice()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <p>Total Price: <span id="total-price-1">100</span> USD</p>
+    </div>
+
+    <div class="product">
+        <h2>Product 2</h2>
+        <p>Price: <span id="product-2-price">200</span> USD</p>
+        <label for="quantity-2">Quantity:</label>
+        <select id="quantity-2" onchange="updatePrice()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <p>Total Price: <span id="total-price-2">200</span> USD</p>
+    </div>
+
+    <script>
+        // Function to update the total price based on quantity
+        function updatePrice() {
+            // For Product 1
+            var price1 = parseFloat(document.getElementById('product-1-price').textContent);
+            var quantity1 = parseInt(document.getElementById('quantity-1').value);
+            var totalPrice1 = price1 * quantity1;
+            document.getElementById('total-price-1').textContent = totalPrice1;
+
+            // For Product 2
+            var price2 = parseFloat(document.getElementById('product-2-price').textContent);
+            var quantity2 = parseInt(document.getElementById('quantity-2').value);
+            var totalPrice2 = price2 * quantity2;
+            document.getElementById('total-price-2').textContent = totalPrice2;
+        }
+
+        // Initialize price on page load
+        window.onload = function() {
+            updatePrice();
+        };
+    </script>
+<script src="../../assets/js/cart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

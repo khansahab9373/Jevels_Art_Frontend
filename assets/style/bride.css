@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9f2;
+  height: fit-content;
+  background-image: url("/assets/images/R.jpeg");
+  /* background-size: cover; */
+  background-attachment: fixed;
+  /* background-position: center; */
+  /* color: white; */
+}
+/* ----------------------------------------------------------------- */
+.navbar {
+  background-color: #f4ded1;
+}
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+}
+.nav-link {
+  color: #ba229e !important;
+}
+.dropdown-menu {
+  background-color: #343a40;
+}
+.dropdown-item {
+  color: #ba229e !important;
+}
+.dropdown-item:hover {
+  background-color: #495057;
+}
+
+.btn-outline-light {
+  color: #ba229e;
+  border-color: #ba229e;
+}
+/* --------------------------------------------------   */
+span {
+  color: #ba229e;
+}
+.footer {
+  background-color: #f4ded1;
+  color: #ba229e;
+  padding: 18px 0;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  /* margin-left: 60px; */
+  text-align: center;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ba229e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #f2f2f2;
+}
+
+.footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 78px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.fa-facebook:before {
+  content: "\f09a";
+  color: #0d6efd;
+}
+
+.fa-twitter:before {
+  content: "\f099";
+  color: #1da1f2;
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+  color: #e1306c;
+}
+.footer .social-icons a:hover {
+  color: #f2f2f2;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: -16px;
+  padding-top: 0px;
+  border-top: 1px solid #f2e9e9;
+}
+
+/* .main_img
+{
+    height:100vh;
+    width:99vw;
+}
+.main_video 
+{   
+    height:100%;
+    width:100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+} */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -60px;
+  }
+}
+
+.icons div {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.main_card {
+  /* background-image: url("/assets/images/R.jpeg"); */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* background-color: #f7f9f2; */
+}
+.card-content {
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.4s;
+  background-color: #f2f2f2;
+}
+.card-content:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(0px, -8px);
+}
+.card-content img {
+  width: 100%;
+  height: 220px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  /* padding-top: 0; */
+  border-radius: 10px;
+}
+.card-content p {
+  text-align: center;
+  color: rgb(30, 122, 158);
+  padding-top: 0 8px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+}
+.card-content h6 {
+  font-size: 26px;
+  text-align: center;
+  color: #222f3e;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+li {
+  padding-top: 5px;
+}
+.stars li {
+  font-size: 26px;
+  text-align: center;
+  transition: 0.4s;
+  margin: 3px;
+  color: orange;
+}
+/* .checked {
+  color: ff9f43;
+} */
+
+.checkout {
+  padding: 5px;
+  /* display: flex; */
+  justify-content: center;
+  background-color: #0d6efd;
+  margin: 5px;
+  color: white;
+  font-size: xx-large;
+  border-radius: 20px;
+}
+
+.fa:hover {
+  transform: scale(1.3);
+  transition: 0.6s;
+}
+button {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  /* width: 16%; */
+  padding: 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  /* border-bottom-right-radius: 0px; */
+  /* border-bottom-left-radius: 0px; */
+  border-radius: 15px;
+  background-color: red;
+}
+
+.our_promises img {
+  width: 99%;
+  margin-left: 0;
+  padding-left: 0;
+}
+.recom_text,
+.con_text {
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 99%;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  border-radius: 30px;
+}
+.carousel-inner img {
+  width: 800px;
+  height: 500px;
+  align-items: center;
+  text-align: center;
+}
+.card-body {
+  backdrop-filter: blur (30px);
+}
+.product-content {
+  display: flex;
+}
+.slider_main {
+  width: 800px;
+}
+#heart {
+  height: 20px;
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.bride_video {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buy {
+  text-align: center;
+  width: 215px;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: #2183a2;
+  margin-bottom: 20px;
+}
+
+/* .Price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+.product_cart {
+  color: white;
+  font-size: 20px;
+  background-color: #2183a2;
+  text-align: center;
+  width: 215px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+/* video{
+  margin-top: 100px;
+} */
+/* .bride_video{
+    height: 400px;
+    margin-top: 40px;
+    padding-top: 10px;
+ } */
+input {
+  border-radius: 5px;
+}
+.card-text i {
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.card-body span {
+  margin-left: 40px;
+  color: red;
+}
+.card-body h3 {
+  text-align: center;
+
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+}
+del {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+.bride_img img {
+  width: 100%;
+  height: 615px;
+}
+.text_bride {
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Domine", serif;
+  font-weight: 400;
+  font-style: normal;
+  /* background-image: url("/assets/images/R.jpeg"); */
+}
+.text_bride p {
+  margin-bottom: 80px;
+  width: 50%;
+  text-align: center;
+  margin-left: 400px;
+  padding-bottom: 10px;
+}
+.stars li {
+  text-align: center;
+  /* font-size: 80px; */
+  color: orange;
+}
+
+@media screen and (max-width: 500px) {
+  .card-content img {
+    width: 100%;
+    height: 175px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    /* padding-top: 0; */
+    border-radius: 10px;
+  }
+  /* .logo img {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-bottom: 20px; 
+      margin-left: 2px;
+}
+.search_icon button {
+    height: 18px;
+    width: 15px;
+    border: none;
+    margin-right: 17px;
+    margin-bottom: 25px;
+    border-radius: 3px;}
+
+        
+    .navbar .search-bar input {
+        width: 25%;
+        padding: 3px;
+        margin-right: 2px;
+    }
+    .icons div {
+        padding-right: 5px;
+        padding-left: 0px;
+        font-size: 9px;}
+    .navbar{
+     justify-content: flex-start;
+    padding: 5px 0px;
+    font-size:8px;}
+   
+ nav i{
+    padding-left: 4px;
+ }
+ nav pre{
+    padding-right: 0px;
+    font-size: 7px;
+}
+    
+
+   
+ .search-bar {
+    width: 20%;
+ }
+
+a {
+    text-decoration: none;
+    color: #ba229e;
+    padding-left: 0px;}
+
+    .navbar .icons a {
+        text-decoration: none;
+        color: #ba229e;
+        margin-left: 9px;
+        font-size: 8px;
+    } */
+  .card-content:hover {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, 0px);
+  }
+  .fa:hover {
+    transform: scale(0);
+    transition: 0;
+  }
+  .footer .social-icons {
+    padding-left: 110px;
+  }
+  .stars li {
+    font-size: 20px;
+    justify-content: center;
+  }
+  ol,
+  ul {
+    padding-left: 0rem;
+  }
+  .bride_img img {
+    height: 197px;
+  }
+
+  .text_bride p {
+    width: 80%;
+    text-align: center;
+    margin-left: 50px;
+  }
+
+  /* .footer .social-icons {
+        padding-left: 50px;
+     } */
+
+  video {
+    width: 360px;
+  }
+  .product_cart {
+    margin-right: 0;
+    width: 160px;
+
+    margin-left: 0px;
+  }
+
+  .buy {
+    width: 150px;
+  }
+  .card-content {
+    margin: 5px;
+    width: 47%;
+  }
+  .fa {
+    margin: 0px;
+    font-size: 20px;
+  }
+
+  .card-content h6 {
+    font-size: 20px;
+  }
+  .footer .social-icons {
+    padding-left: 108px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  .card-content img {
+    width: 100%;
+    height: 282px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    /* padding-top: 0; */
+    border-radius: 10px;
+  }
+  .bride_img img {
+    width: 100%;
+    height: 400px;
+  }
+  /* .logo img {
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+    border-radius: 30px;
+  }
+  .navbar {
+    font-size: 12px;
+    justify-content: flex-start;
+    padding: 10px 0;
+    margin: 0 0;
+  }
+  nav pre {
+    padding-right: 0px;
+    font-size: 7px;
+  }
+  .search-bar {
+    width: 20%;
+  }
+
+  .navbar .search-bar input {
+    padding-left: 25px;
+    width: 90%;
+  }
+
+  .icons div {
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+
+  .navbar .search-bar {
+    padding-left: 5px;
+    margin: 0 0;
+  }
+
+  .text_bride p {
+    margin-left: 225px;
+  }
+  .product_cart {
+    margin-left: 0px;
+  }
+
+  .card-content {
+    width: 40%;
+  } */
+  .footer .social-icons {
+    padding-left: 300px;
+  }
+
+  .bride_text p {
+    width: 100%;
+    padding: 5px 20%;
+    text-align: center;
+  }
+  .footer .social-icons {
+    padding-left: 0px;
+    justify-content: center;
+  }
+  .card-content {
+    width: 38%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: 0.4s;
+    background-color: #f2f2f2;
+  }
+  .footer .social-icons {
+    justify-content: center;
+    padding-left: 0px;
+  }
+  /* .search_icon button {
+    height: 33px;
+    width: 22px;
+    margin-right: 25px;
+    border-radius: 3px;
+  }
+  .navbar {
+    justify-content: flex-start;
+  } */
+}
+/* tablet width */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+}
