@@ -109,7 +109,7 @@
     <script>
         // Function to fetch data from API and display in table
         function fetchOrderData() {
-            fetch('https://jewels-art-backend.vercel.app/getallorder')
+            fetch('https://jewels-art-backend.vercel.app/user/getallorder')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);

@@ -310,7 +310,7 @@
             securityNumber: document.getElementById("securityNumber").value,
           };
 
-          fetch("https://jewels-art-backend.vercel.app/order", {
+          fetch("https://jewels-art-backend.vercel.app/user/order", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
