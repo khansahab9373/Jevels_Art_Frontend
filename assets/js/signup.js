@@ -28,7 +28,7 @@ form.addEventListener("submit", function (event) {
   }
 
   // Send POST request using Fetch API
-  fetch("http://localhost:5000/signup", {
+  fetch("https://jewels-art-backend.vercel.app/user/signup", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
